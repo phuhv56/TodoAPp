@@ -24,7 +24,7 @@ export default class TodoItem extends Component {
                 }
             },
             onOpen: (secId, rowId, direction) => {
-                this.setState({activeRowKey: this.props.item.key})
+                this.setState({activeRowKey: this.props.index})
             },
             right: [
                 {

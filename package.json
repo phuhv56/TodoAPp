@@ -9,6 +9,7 @@
 	"dependencies": {
 		"react": "16.0.0",
 		"react-native": "0.50.3",
+		"react-native-cli": "^2.0.1",
 		"react-native-elements": "^0.18.2",
 		"react-native-swipeout": "^2.3.1"
 	},

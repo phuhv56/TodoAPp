@@ -21,11 +21,13 @@ export default class TodoList extends Component {
     }
 
     _refeshFlatList = (deleteKey) => {
+        console.log(deleteKey);
         this.setState((prevState) => {
             return {
                 deleteRowKey: deleteKey
             };
         })
+        console.log(this.state.deleteRowKey);
     }
 
     _renderItem = ({item, index}) => (
@@ -39,10 +41,11 @@ export default class TodoList extends Component {
     _keyExtractor = (item, index) => item.key;
 
     render() {
+        console.log(this.props.data.length);
         return (
             <View>
                 <FlatList
-                    data={this.state.data}
+                    data={this.props.data}
                     renderItem={this._renderItem}
                     keyExtractor={this._keyExtractor}
                 >

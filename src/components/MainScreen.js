@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: 'linen',
         alignItems: 'center',
-        paddingTop: 20
+        paddingTop: (Platform.OS === 'ios') ? 20 : 0,
     },
     rightBtn: {
         flex: 1,
